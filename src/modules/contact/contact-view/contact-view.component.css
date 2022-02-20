@@ -1,0 +1,19 @@
+.contact_view_container{
+    padding: 50px;
+}
+
+.contact_view_container .heading{
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.contact_view_container .links{
+    font-size: 20px;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.contact_view_container .links i{
+    cursor: pointer;
+}

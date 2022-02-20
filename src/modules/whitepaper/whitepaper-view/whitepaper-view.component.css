@@ -1,0 +1,25 @@
+
+.whitepaper_container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.whitepaper_container .whitepaper_header{
+    font-size: 40px;
+    padding: 50px 0;
+}
+.whitepaper_container .content{
+    background-color: transparent;
+}
+
+.whitepaper_container .content .short_intro{
+    white-space: pre-line;
+}
+
+.whitepaper_container .download_btn button{
+    cursor: pointer;
+    font-size: 24px;
+    margin: 40px 0;
+}
