@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, Segment } from "semantic-ui-react";
-import { NAVBAR_ITEMS, ROUTES } from "../../constants/app.constants";
+import { NAVBAR_ITEMS } from "../../constants/app.constants";
 
 export default function Header() {
     const navigate = useNavigate();
@@ -20,15 +20,15 @@ export default function Header() {
                 secondary
             >
                 <Menu.Menu position="right">
-                    {NAVBAR_ITEMS.map(({ displayName, route }) => (
+                    {NAVBAR_ITEMS.map(({ displayName, route }, index) => (
                         <Menu.Item
                             name={displayName}
-                            style={{ 
-                              color: "white", 
-                              borderBottom: `${route === window.location.pathname ? "1px solid white" : ""}`,
-                              borderRadius:"0px" 
+                            key={`${index}_${displayName}`}
+                            style={{
+                                color: "white",
+                                borderBottom: `${route === window.location.pathname ? "1px solid white" : ""}`,
+                                borderRadius: "0px",
                             }}
-
                             onClick={() => onHeaderNavigationClick(route)}
                         >
                             {displayName}

@@ -35,8 +35,8 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: "Advanced React with Webpack Setup",
             template: path.resolve(__dirname, "..", "./src/index.html"),
+            favicon: "./favicon.ico",
         }),
     ],
     output: {
