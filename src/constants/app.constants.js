@@ -1,10 +1,10 @@
 export const ROUTES = {
-    HOME: "/home",
+    HOME: "/",
     ABOUT: "/about",
     CONTACT: "/contact",
     TOKENOMICS: "/tokenomics",
     LAUNCH_PLAN: "/launch",
-    WHITEPAPER:"/whitepaper"
+    WHITEPAPER: "/whitepaper",
 };
 
 export const NAVBAR_ITEMS = [

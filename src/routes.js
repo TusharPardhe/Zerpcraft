@@ -13,10 +13,6 @@ export default function Routes() {
         <SwitchTransition mode="out-in">
             <CSSTransition key={location.key} timeout={500} classNames="fade">
                 <RoutesBundle location={location}>
-                    <Route
-                        path="/"
-                        element={<Navigate to={ROUTES.HOME} />}
-                    />
                     <Route path={ROUTES.HOME} element={<HomePageView />} />
                     <Route path={ROUTES.LAUNCH_PLAN} element={<LaunchPlanView />} exact />
                     <Route path={ROUTES.WHITEPAPER} exact element={<WhitePaperView />} />
